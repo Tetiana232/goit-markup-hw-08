@@ -82,8 +82,8 @@ color: rgba(117, 117, 117, 0.5);
 display: flex;
 align-items: center;
 font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
+font-size: 12px;
+line-height: 1.17;
 letter-spacing: 0.03em;
 color: #757575;
 &::before {
@@ -93,18 +93,26 @@ height: 15px;
 border: 2px solid var(--primary-text-color);
 border-radius: 3px;
 margin-right: 8px;
-}
-.modal-check:checked + &::before {
+.modal-check:checked + & {
 background-color: var(--color-accent);
 background-image: url(../img/Vector.svg);
 border: none;
 background-repeat: no-repeat;
 background-position: center;
 }
-.modal-check:focus + &::before {
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1200px) {
+font-size: 14px;
+line-height: 1.71;
+}
+}
+
+.modal-check:focus + .check-text::before {
 border-color: var(--color-accent);
 }
-}
+
 
 /* .modal-check:focus {
 fill: var(--color-accent);

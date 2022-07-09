@@ -42,7 +42,10 @@
         <section class="main">
             <div class="container">
             <h1 class="main__title">Эффективные решения <br/> для вашего бизнеса</h1>
+            <div>
             <button type="button" class="main__button" data-modal-open>Заказать услугу</button>
+            </div>
+            </div>
         </section>
 
         <section class="features">
@@ -120,7 +123,32 @@
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__list list">
                 <li class="team__item">
-                    <img class="image" src="img/img_ph_1.jpg" alt="Фотография Игоря Демьяненка" width="270">
+                <picture>
+                    <source 
+                    srcset="
+                    ./img/img_ph_1.jpg 1x,
+                    ./img/img3-2x.jpg 2x"
+                    media="(min-width: 1200px)">
+                    <source 
+                    srcset="
+                    ./img/img3-tab.jpg 1x,
+                    ./img/img3-tab2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    >
+                    <source 
+                    srcset="
+                    ./img/img3-mob.jpg 1x,
+                    ./img/img3-mob2x.jpg 2x"
+                    media="(min-width: 320px)"
+                    >
+                    <img 
+                srcset="
+                ./img/img_ph_1.jpg 1x,
+                ./img/img3-2x.jpg 2x"
+                class="image" 
+                src=".img/img_ph_1.jpg" 
+                alt="Фотография Игоря Демьяненка" width="270">
+                </picture>
                     <div class="team__border">
                     <h3 class="team__name">Игорь Демьяненко</h3>
                     <p lang="en" class="team__position">Product Designer</p>
@@ -150,7 +178,29 @@
                     
                 </li>
                 <li class="team__item">
-                    <img class="image" src="img/img_ph_2.jpg" alt="Фотография Ольги Репиной" width="270">
+                     <picture>
+                    <source 
+                    srcset="
+                ./img/img_ph_2.jpg 1x,
+                ./img/img4-2x.jpg 2x"
+                media="(min-width: 1200px)">
+                <source 
+                    srcset="
+                ./img/img4-tab.jpg 1x,
+                ./img/img4-tab2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source 
+                    srcset="
+                ./img/img4-mob.jpg 1x,
+                ./img/img4-mob2x.jpg 2x"
+                media="(min-width: 320px)">
+                <img 
+                srcset="
+                ./img/img_ph_2.jpg 1x,
+                ./img/img4-2x.jpg 2x"
+                class="image" 
+                src="./img/img_ph_2.jpg" alt="Фотография Ольги Репиной" width="270">
+                </picture>
                     <div class="team__border">
                     <h3 class="team__name">Ольга Репина</h3>
                     <p lang="en" class="team__position">Frontend Developer</p>
@@ -179,7 +229,29 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img class="image" src="img/img_ph_3.jpg" alt="Фотография Николая Тарасова" width="270">
+                     <picture>
+                    <source
+                    srcset="
+                ./img/img_ph_3.jpg 1x,
+                ./img/img5-2x.jpg 2x"
+                media="(min-width: 1200px)">
+                <source
+                    srcset="
+                ./img/img5-tab.jpg 1x,
+                ./img/img5-tab2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source
+                    srcset="
+                ./img/img5-mob.jpg 1x,
+                ./img/img5-mob2x.jpg 2x"
+                media="(min-width: 320px)">
+                <img
+                srcset="
+                ./img/img_ph_3.jpg 1x,
+                ./img/img5-2x.jpg 2x"
+                class="image" 
+                src="./img/img_ph_3.jpg" alt="Фотография Николая Тарасова" width="270">
+                </picture>
                     <div class="team__border">
                     <h3 class="team__name">Николай Тарасов</h3>
                     <p lang="en" class="team__position">Marketing</p>
@@ -208,7 +280,29 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img class="image" src="img/img_ph_4.jpg" alt="Фотография Михаила Ермакова" width="270">
+                    <picture>
+                    <source
+                    srcset="
+                ./img/img_ph_4.jpg 1x,
+                ./img/img6-2x.jpg 2x"
+                media="(min-width: 1200px)">
+                <source
+                    srcset="
+                ./img/img6-tab.jpg 1x,
+                ./img/img6-tab2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source
+                    srcset="
+                ./img/img6-mob.jpg 1x,
+                ./img/img6-mob2x.jpg 2x"
+                media="(min-width: 320px)">
+                <img 
+                srcset="
+                ./img/img_ph_4.jpg 1x,
+                ./img/img6-2x.jpg 2x"
+                class="image" 
+                src="./img/img_ph_4.jpg" alt="Фотография Михаила Ермакова" width="270">
+                </picture>
                     <div class="team__border">
                     <h3 class="team__name">Михаил Ермаков</h3>
                     <p lang="en" class="team__position">UI Designer</p>

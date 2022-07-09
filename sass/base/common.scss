@@ -1,15 +1,19 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--primary-text-color);
+font-family: 'Roboto', sans-serif;
+color: var(--primary-text-color);
 }
 
 .image {
-    display: block;}
+display: block;
+max-width: 100%;
+height: auto;
+width: 100%;
+}
 
 .list {
-    list-style: none;
+list-style: none;
 }
 
 .link {
-    text-decoration: none;
+text-decoration: none;
 }
