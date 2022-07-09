@@ -1,0 +1,16 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-text-color);
+}
+
+.image {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}/*# sourceMappingURL=common.css.map */
